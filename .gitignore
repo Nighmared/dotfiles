@@ -3,7 +3,11 @@
 !/nano/
 !/neofetch/
 !/alacritty/
+
 !/zsh/
+/zsh/*/
+!/zsh/oh-my-zsh/themes/agnoster.zsh-theme
+
 /spicetify/*/
 !/spicetify/
 !/spicetify/Themes/
