@@ -5,7 +5,7 @@
 !/alacritty/
 
 !/zsh/
-/zsh/*
+/zsh/*/
 !/zsh/oh-my-zsh/
 /zsh/oh-my-zsh/*
 !/zsh/oh-my-zsh/custom
