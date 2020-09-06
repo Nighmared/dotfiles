@@ -1,0 +1,10 @@
+set autoindent #keep intendation level
+set linenumbers  #show line numbers
+set quickblank #status stuff like saved x lines disappears quicker
+set tabsize 4 #4 instead of 8 tabsize
+unset tabstospaces #keep tabs !!
+set positionlog #remember cursor position on per file basis
+
+set numbercolor blue #color of line numbers
+
+include "/usr/share/nano/*.nanorc"
