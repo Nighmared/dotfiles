@@ -7,7 +7,7 @@
 !/zsh/
 /zsh/*/
 !/zsh/oh-my-zsh/themes/agnoster.zsh-theme
-
+!/zsh/oh-my-zsh/custom/*/*
 /spicetify/*/
 !/spicetify/
 !/spicetify/Themes/
