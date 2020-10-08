@@ -4,6 +4,9 @@ set quickblank #status stuff like saved x lines disappears quicker
 set tabsize 4 #4 instead of 8 tabsize
 unset tabstospaces #keep tabs !!
 set positionlog #remember cursor position on per file basis
+set softwrap
+set nowrap
+
 #colors below
 set numbercolor blue,black #color of line numbers
 set titlecolor blue,black #color of titlebar
