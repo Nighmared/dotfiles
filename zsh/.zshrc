@@ -109,3 +109,6 @@ source /etc/zsh_command_not_found
 
 #fuck underlined sudo
 export ZSH_HIGHLIGHT_STYLES[precommand]=fg=126,bold
+
+#autocomplete for eprog script
+complete -f -o noquote -X "!*.java" /usr/bin/eprog
