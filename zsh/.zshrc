@@ -112,3 +112,8 @@ export ZSH_HIGHLIGHT_STYLES[precommand]=fg=126,bold
 
 #autocomplete for eprog script
 complete -f -o noquote -X "!*.java" /usr/bin/eprog
+
+#vis cat
+#start local visit instance
+alias visitcmd='visdev test . -e AUTORELOAD=true --build-arg TYPE=feature -v "$(pwd)/src/admininterface:/app/src/admininterface" -v "$(pwd)/src/companies:/app/src/companies" -v "$(pwd)/src/jobboerse:/app/src/jobboerse" -v "$(pwd)/src/kontaktparty:/app/src/kontaktparty" -v "$(pwd)/src/templates:/app/src/templates" -v "$(pwd)/src/user:/app/src/user" -v "$(pwd)/src/visionen:/app/src/visionen"'
+
