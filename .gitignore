@@ -1,5 +1,6 @@
 /*
 !/.gitignore
+!/.gitmodules
 !/nano/
 !/neofetch/
 !/alacritty/
@@ -15,7 +16,7 @@
 /zsh/oh-my-zsh/custom/*
 !/zsh/oh-my-zsh/custom/themes
 /zsh/oh-my-zsh/custom/themes/example.zsh-theme
-!/zsh/oh-my-zsh/custom/plugins
+!/zsh/oh-my-zsh/custom/plugins/*
 /zsh/oh-my-zsh/custom/plugins/example
 !/zsh/oh-my-zsh/oh-my-zsh.sh
 
