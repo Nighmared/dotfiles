@@ -117,3 +117,6 @@ complete -f -o noquote -X "!*.java" /usr/bin/eprog
 #start local visit instance
 alias visitcmd='visdev test . -e AUTORELOAD=true --build-arg TYPE=feature -v "$(pwd)/src/admininterface:/app/src/admininterface" -v "$(pwd)/src/companies:/app/src/companies" -v "$(pwd)/src/jobboerse:/app/src/jobboerse" -v "$(pwd)/src/kontaktparty:/app/src/kontaktparty" -v "$(pwd)/src/templates:/app/src/templates" -v "$(pwd)/src/user:/app/src/user" -v "$(pwd)/src/visionen:/app/src/visionen"'
 
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
