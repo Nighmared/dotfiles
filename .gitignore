@@ -2,7 +2,9 @@
 !/.gitignore
 !/nano/
 !/neofetch/
-!/alacritty/
+!/htop/
+
+
 
 !/zsh/
 /zsh/*/
@@ -17,8 +19,4 @@
 /zsh/oh-my-zsh/custom/themes/example.zsh-theme
 !/zsh/oh-my-zsh/custom/plugins
 /zsh/oh-my-zsh/custom/plugins/example
-
-/spicetify/*/
-!/spicetify/
-!/spicetify/Themes/
 
