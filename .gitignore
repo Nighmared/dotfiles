@@ -7,19 +7,4 @@
 
 
 !/zsh/
-/zsh/*/
-!/zsh/oh-my-zsh/
-/zsh/oh-my-zsh/*
-!/zsh/oh-my-zsh/oh-my-zsh.sh
-!/zsh/oh-my-zsh/lib/compfix.zsh
-!/zsh/oh-my-zsh/tools/check_for_upgrade.sh
-!/zsh/oh-my-zsh/custom
-!/zsh/oh-my-zsh/themes
-/zsh/oh-my-zsh/themes/*
-#!/zsh/oh-my-zsh/themes/agnoster.zsh-theme
-/zsh/oh-my-zsh/custom/*
-!/zsh/oh-my-zsh/custom/themes
-/zsh/oh-my-zsh/custom/themes/example.zsh-theme
-!/zsh/oh-my-zsh/custom/plugins
-/zsh/oh-my-zsh/custom/plugins/example
 
