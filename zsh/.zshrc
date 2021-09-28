@@ -120,3 +120,7 @@ alias visitcmd='visdev test . -e AUTORELOAD=true --build-arg TYPE=feature -v "$(
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
+
+
+# ocaml yay
+eval $(opam config env)
