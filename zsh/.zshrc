@@ -68,9 +68,11 @@ ZSH_THEME="agnosterCustom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize k zsh-syntax-highlighting)
+plugins=(git colorize zsh-syntax-highlighting kubectl z )
 
 source $ZSH/oh-my-zsh.sh
+
+export EDITOR=nano
 
 # User configuration
 
@@ -98,11 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#fuck python2 :)
-alias python='python3'
-alias pip='pip3'
-
-
 #command not found suggests available packages
 source /etc/zsh_command_not_found
 
@@ -113,14 +110,52 @@ export ZSH_HIGHLIGHT_STYLES[precommand]=fg=126,bold
 #autocomplete for eprog script
 complete -f -o noquote -X "!*.java" /usr/bin/eprog
 
-#vis cat
-#start local visit instance
-alias visitcmd='visdev test . -e AUTORELOAD=true --build-arg TYPE=feature -v "$(pwd)/src/admininterface:/app/src/admininterface" -v "$(pwd)/src/companies:/app/src/companies" -v "$(pwd)/src/jobboerse:/app/src/jobboerse" -v "$(pwd)/src/kontaktparty:/app/src/kontaktparty" -v "$(pwd)/src/templates:/app/src/templates" -v "$(pwd)/src/user:/app/src/user" -v "$(pwd)/src/visionen:/app/src/visionen"'
-
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
+#go stuff
+export PATH="$HOME/go/bin:$PATH"
 
 # ocaml yay
 eval $(opam config env)
+
+
+####
+#VIS
+
+#vis cat
+#start local visit instance
+alias visitcmd='visdev test . -e AUTORELOAD=true --build-arg TYPE=feature -v "$(pwd)/src/admininterface:/app/src/admininterface" -v "$(pwd)/src/companies:/app/src/companies" -v "$(pwd)/src/jobboerse:/app/src/jobboerse" -v "$(pwd)/src/kontaktparty:/app/src/kontaktparty" -v "$(pwd)/src/templates:/app/src/templates" -v "$(pwd)/src/user:/app/src/user" -v "$(pwd)/src/visionen:/app/src/visionen"'
+
+#krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+#stuff
+alias getsecret="jq '.data.value' -r | base64 --decode | cut -c 1-"
+
+
+####
+
+#timer thing..
+function preexec() {
+    timer=${timer:-$SECONDS}
+}
+
+function precmd() {
+    if [ $timer ]; then
+        timer_show=$(($SECONDS - $timer))
+        timer_show=$(printf '%.*f\n' 3 $timer_show)
+        export RPROMPT="%F{white}${timer_show}s %F{$dcolor}"
+        unset timer
+    fi
+}
+#####
+
+
+autoload -U compinit; compinit
+
+
+#ccat style
+
+export ZSH_COLORIZE_STYLE="monokai"
