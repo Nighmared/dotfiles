@@ -68,8 +68,8 @@ ZSH_THEME="agnosterCustom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize zsh-syntax-highlighting kubectl z )
-
+#plugins=(git colorize zsh-syntax-highlighting kubectl z )
+plugins=(z git kubectl)
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nano
@@ -105,7 +105,7 @@ source /etc/zsh_command_not_found
 
 
 #fuck underlined sudo
-export ZSH_HIGHLIGHT_STYLES[precommand]=fg=126,bold
+#export ZSH_HIGHLIGHT_STYLES[precommand]=fg=126,bold
 
 #autocomplete for eprog script
 complete -f -o noquote -X "!*.java" /usr/bin/eprog
@@ -154,6 +154,8 @@ function precmd() {
 
 
 autoload -U compinit; compinit
+
+  source <(kubectl completion zsh)
 
 
 #ccat style
