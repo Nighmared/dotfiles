@@ -4,3 +4,4 @@
 	signingkey = jonas.konrath@icloud.com
 [includeif "gitdir:~/Documents/vis/"]
 	path = ~/Documents/vis/gitconfig
+
