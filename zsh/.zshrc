@@ -69,7 +69,7 @@ ZSH_THEME="agnosterCustom"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git colorize zsh-syntax-highlighting kubectl z )
-plugins=(z git kubectl)
+plugins=(z git kubectl colorize)
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nano
@@ -101,7 +101,7 @@ export EDITOR=nano
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #command not found suggests available packages
-source /etc/zsh_command_not_found
+#source /etc/zsh_command_not_found
 
 
 #fuck underlined sudo
@@ -161,3 +161,8 @@ autoload -U compinit; compinit
 #ccat style
 
 export ZSH_COLORIZE_STYLE="monokai"
+
+
+# path fun
+
+export PATH="/home/nighmared/.local/bin/:$PATH"
