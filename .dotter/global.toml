@@ -1,0 +1,48 @@
+[helpers]
+
+
+[default.files]
+
+[alacritty.files]
+alacritty = "~/.config/alacritty/alacritty.toml"
+
+[atuin.files]
+atuin = "~/.config/atuin/config.toml"
+
+[code.files]
+code-keybindings = "~/.config/Code/User/keybindings.json"
+code-settings = "~/.config/Code/User/settings.json"
+
+[fish.files]
+fish = "~/.config/fish/config.fish"
+fish-atuin = "~/.config/fish/conf.d/atuin.env.fish"
+fish-grepir = "~/.config/fish/conf.d/grepir.fish"
+fish-kubectl = "~/.config/fish/conf.d/kubectl.fish"
+fish-z = "~/.config/fish/conf.d/z.fish"
+fish_variables = "~/.config/fish/fish_variables"
+fish_plugins = "~/.config/fish/fish_plugins"
+
+[git.files]
+git = "~/.config/git/config"
+git-eth = "~/Documents/ETH/gitconfig"
+git-vis = "~/Documents/vis/gitconfig"
+
+[htop.files]
+htop = "~/.config/htop/htoprc"
+
+[nano.files]
+nano = "~/.config/nano/nanorc"
+
+[ssh.files]
+ssh = "~/.ssh/config"
+
+[ssh.variables]
+raava_remote_key = "a"
+
+
+[vlc.files]
+vlcrc = "~/.config/vlc/vlcrc"
+
+
+[settings]
+default_target_type = "automatic"

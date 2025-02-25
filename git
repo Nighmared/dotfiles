@@ -1,0 +1,17 @@
+[user]
+	email = jonas.konrath@icloud.com
+	name = nighmared
+	signingkey = 0AFA500F21C29C1CAC4255612B102A6447BF5404
+[includeif "gitdir:~/Documents/vis/"]
+	path = ~/Documents/vis/gitconfig
+[includeif "gitdir:~/Documents/DeepJudge/"]
+	path = ~/Documents/DeepJudge/gitconfig
+[includeif "gitdir:~/Documents/ETH/"]
+    path = ~/Documents/ETH/gitconfig
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

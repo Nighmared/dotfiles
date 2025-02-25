@@ -1,0 +1,2 @@
+[ssh.variables]
+raava_remote_key = "/home/nighmared/.ssh/raava_remote"

@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+[Backslash]",
+    "command": "editor.action.selectToBracket"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-extension.tabKeyBinding",
+    "when": "editorTextFocus"
+  }
+]

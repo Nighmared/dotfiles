@@ -1,0 +1,59 @@
+Host raava.nighmared.ch
+	User login-user
+	Port 23847
+	IdentityFile {{ raava_remote_key }}
+	ControlMaster auto
+	ControlPath /home/nighmared/.ssh/controlmasters/%r@%h:%p
+	ControlPersist 3m
+
+Host *.raava.wg
+	User nighmared
+	ControlMaster auto
+	ControlPath /home/nighmared/.ssh/controlmasters/%r@%h:%p
+	ControlPersist 3m
+
+
+#only use jumphost if looking hostname up on raava dns server fails
+Match host *.raava.wg !exec "dig @192.168.1.11 %h +time=0 +tries=1"
+	ProxyJump raava.nighmared.ch
+Match host raava.wg !exec "dig @192.168.1.11 %h +time=0 +tries=1"
+	ProxyJump raava.nighmared.ch
+Host pi-media.local pi.wg
+	User root
+
+
+###############3ISL
+Host jumphost.inf.ethz.ch
+	User konrathj
+
+Host isl-desktop3.inf.ethz.ch
+	Port 2142
+	User student
+	ProxyJump jumphost.inf.ethz.ch
+	IdentityFile ~/.ssh/isl
+#######################33
+Host pos-frontend.vis.ethz.ch kavis.ethz.ch vending-machine-1.vis.ethz.ch vending-machine-2.vis.ethz.ch
+	User pi
+
+Host *.vis.ethz.ch
+	User vis
+
+Host thesisvm
+  User konrathj
+  HostName ee-tik-nsgvm008.ethz.ch
+
+Host dieter.dj
+  HostName 192.168.87.191
+  User deepjudge
+
+Host daniel.dj
+  HostName 192.168.87.190
+  User deepjudge
+
+Host denise.dj
+  HostName 192.168.87.192
+  User deepjudge
+
+Host office-ingress.dj
+  HostName 20.199.178.188
+  User deepjudge
