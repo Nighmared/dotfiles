@@ -1,3 +1,6 @@
+######################################################################
+# do not edit outside of dotter repo, will be overwritten otherwise  #
+######################################################################
 Host raava.nighmared.ch
 	User login-user
 	Port 23847
