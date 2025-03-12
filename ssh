@@ -11,6 +11,7 @@ Host raava.nighmared.ch
 
 Host *.raava.wg
 	User nighmared
+	IdentityFile {{ raava_local_key }}
 	ControlMaster auto
 	ControlPath /home/nighmared/.ssh/controlmasters/%r@%h:%p
 	ControlPersist 3m
@@ -41,22 +42,22 @@ Host pos-frontend.vis.ethz.ch kavis.ethz.ch vending-machine-1.vis.ethz.ch vendin
 Host *.vis.ethz.ch
 	User vis
 
-Host thesisvm
-  User konrathj
-  HostName ee-tik-nsgvm008.ethz.ch
+# Host thesisvm
+#   User konrathj
+#   HostName ee-tik-nsgvm008.ethz.ch
 
-Host dieter.dj
-  HostName 192.168.87.191
-  User deepjudge
+# Host dieter.dj
+#   HostName 192.168.87.191
+#   User deepjudge
 
-Host daniel.dj
-  HostName 192.168.87.190
-  User deepjudge
+# Host daniel.dj
+#   HostName 192.168.87.190
+#   User deepjudge
 
-Host denise.dj
-  HostName 192.168.87.192
-  User deepjudge
+# Host denise.dj
+#   HostName 192.168.87.192
+#   User deepjudge
 
-Host office-ingress.dj
-  HostName 20.199.178.188
-  User deepjudge
+# Host office-ingress.dj
+#   HostName 20.199.178.188
+#   User deepjudge

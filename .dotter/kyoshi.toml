@@ -1,0 +1,19 @@
+includes = [".dotter/includes/kyoshi-vars.toml"]
+packages = [
+    "alacritty",
+    "atuin",
+    "code",
+    "fish",
+    "git",
+    "htop",
+    "nano",
+    "ssh",
+    "vlc",
+]
+
+# [files]
+
+# [variables]
+
+
+# [ssh.variables]

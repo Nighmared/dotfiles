@@ -1,0 +1,3 @@
+[ssh.variables]
+raava_remote_key = "/home/nighmared/.ssh/id_raava_external"
+raava_local_key = "/home/nighmared/.ssh/id_raava_local"
