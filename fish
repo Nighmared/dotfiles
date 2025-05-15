@@ -46,9 +46,6 @@ alias eraava="code ~/Documents/projects/raava-compose"
  #atuin
  atuin init fish | source
 
-#micromamba
-set -gx MAMBA_ROOT_PREFIX ~/.micromamba
-alias conda=micromamba
 
 #remote sokka docker access
 alias sokdok="export DOCKER_HOST=ssh://sokka.raava.wg"

@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Karma",
+  "workbench.colorTheme": "Karma Light",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
@@ -100,5 +100,6 @@
   ],
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
+  "python.defaultInterpreterPath": "/usr/bin/python"
 }
