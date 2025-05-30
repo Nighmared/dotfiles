@@ -18,7 +18,7 @@ set -gx PATH $PATH $HOME/go/bin
 set -gx PATH $PATH $HOME/bin
 set -gx PATH $PATH $HOME/.codon/bin
 set -gx PATH $PATH $HOME/.cargo/bin
-
+set -gx PATH $PATH $HOME/intel/oneapi/advisor/latest/bin64
 
 alias getsecret="jq '.data.value' -r | base64 --decode | cut -c 1-"
 

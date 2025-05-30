@@ -1,7 +1,7 @@
 [user]
 	email = jonas.konrath@icloud.com
 	name = nighmared
-	signingkey = 0AFA500F21C29C1CAC4255612B102A6447BF5404
+	signingkey = jonas.konrath@icloud.com
 [includeif "gitdir:~/Documents/vis/"]
 	path = ~/Documents/vis/gitconfig
 [includeif "gitdir:~/Documents/DeepJudge/"]
