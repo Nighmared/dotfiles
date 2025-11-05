@@ -20,9 +20,24 @@ set -gx PATH $PATH $HOME/.codon/bin
 set -gx PATH $PATH $HOME/.cargo/bin
 set -gx PATH $PATH $HOME/intel/oneapi/advisor/latest/bin64
 
+#gopath
+set -x GOPATH $HOME/go
+#DONT -U with set aaa
+
+
+alias getvenv="source .venv/bin/activate.fish"
+
+set -x THESIS_PATH $HOME/Documents/ETH/master_thesis
+alias thesisutil="$THESIS_PATH/cluster_test/utils/cli/cli"
+alias tu=thesisutil
+
+#LUA DEPENDENCY HELL OMG
+eval "$(luarocks --lua-version 5.1 path)"
+
 alias getsecret="jq '.data.value' -r | base64 --decode | cut -c 1-"
 
 alias theme="npx alacritty-themes"
+
 
 #homeserver
 set -x defaultbrowser xdg-settings get default-web-browser | cut -d "." -f 1

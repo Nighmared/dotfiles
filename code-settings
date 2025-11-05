@@ -29,7 +29,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "always"
+      "source.organizeImports": "never"
     },
     "editor.formatOnType": true
   },
@@ -101,5 +101,5 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "python.defaultInterpreterPath": "/usr/bin/python"
+  "python.defaultInterpreterPath": "/bin/python"
 }

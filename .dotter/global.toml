@@ -43,6 +43,8 @@ raava_remote_key = "a"
 [vlc.files]
 vlcrc = "~/.config/vlc/vlcrc"
 
+[niri.files]
+niri = "~/.config/niri/config.kdl"
 
 [settings]
 default_target_type = "automatic"
