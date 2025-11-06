@@ -46,5 +46,21 @@ vlcrc = "~/.config/vlc/vlcrc"
 [niri.files]
 niri = "~/.config/niri/config.kdl"
 
+[mako.files]
+mako = "~/.config/mako/config"
+
+[waybar.files]
+waybar = "~/.config/waybar/config.jsonc"
+waybar-style = "~/.config/waybar/style.css"
+
+[swaylock.files]
+swaylock = "~/.config/swaylock/config"
+
+[swaybg.files]
+swaybg = "~/.config/systemd/user/swaybg.service"
+
+[helix.files]
+helix = "~/.config/helix/config.toml"
+
 [settings]
 default_target_type = "automatic"

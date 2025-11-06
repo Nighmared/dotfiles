@@ -6,10 +6,15 @@ packages = [
     "fish",
     "git",
     "htop",
+    "mako",
     "nano",
     "niri",
     "ssh",
     "vlc",
+    "waybar",
+    "swaylock",
+    "swaybg",
+    "helix",
 ]
 
 # [files]
