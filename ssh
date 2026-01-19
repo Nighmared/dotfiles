@@ -1,6 +1,7 @@
 ######################################################################
 # do not edit outside of dotter repo, will be overwritten otherwise  #
 ######################################################################
+
 Host raava.nighmared.ch
 	User login-user
 	Port 23847
@@ -16,14 +17,23 @@ Host *.raava.wg
 	ControlPath /home/nighmared/.ssh/controlmasters/%r@%h:%p
 	ControlPersist 3m
 
-
 #only use jumphost if looking hostname up on raava dns server fails
 Match host *.raava.wg !exec "dig @192.168.1.11 %h +time=0 +tries=1"
 	ProxyJump raava.nighmared.ch
 Match host raava.wg !exec "dig @192.168.1.11 %h +time=0 +tries=1"
 	ProxyJump raava.nighmared.ch
-Host pi-media.local pi.wg
-	User root
+
+################################
+# master thesis
+
+
+# the match is required because otherwise the include is
+# parsed as part of the last Host above (e.g. pi-media.local)
+Match all
+	Include thesis_cscs
+
+
+###############################
 
 
 ###############3ISL
@@ -41,6 +51,13 @@ Host pos-frontend.vis.ethz.ch kavis.ethz.ch vending-machine-1.vis.ethz.ch vendin
 
 Host *.vis.ethz.ch
 	User vis
+
+Host pi.wg
+	
+	IdentityFile ~/.ssh/id_office-pi
+
+
+	
 
 # Host thesisvm
 #   User konrathj

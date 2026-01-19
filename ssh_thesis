@@ -1,0 +1,83 @@
+# Config for slimfly hosts at cscs used in master thesis
+
+Host ela.cscs.ch
+    IdentityFile /home/nighmared/.ssh/cscs-key
+
+Host slimfly*
+  User jkonrath
+  IdentityFile /home/nighmared/.ssh/thesis_ed25519
+
+Host slimfly
+    HostName slimfly.cscs.ch
+
+Host slimfly1
+    HostName 148.187.111.11
+
+Host slimfly2
+    HostName 148.187.111.12
+
+Host slimfly3
+    HostName 148.187.111.13
+
+Host slimfly4
+    HostName 148.187.111.14
+
+Host slimfly5
+    HostName 148.187.111.15
+
+Host slimfly6
+    HostName 148.187.111.16
+
+Host slimfly7
+    HostName 148.187.111.17
+
+Host slimfly8
+    HostName 148.187.111.18
+
+Host slimfly9
+    HostName 148.187.111.19
+
+Host slimfly10
+    HostName 148.187.111.20
+
+Host slimfly11
+    HostName 148.187.111.21
+
+Host slimfly12
+    HostName 148.187.111.22
+
+Host slimfly13
+    HostName 148.187.111.23
+
+Host slimfly14
+    HostName 148.187.111.24
+
+Host slimfly15
+    HostName 148.187.111.25
+
+Host slimfly16
+    HostName 148.187.111.26
+
+Host slimfly17
+    HostName 148.187.111.27
+
+Host slimfly18
+    HostName 148.187.111.28
+
+Host slimfly19
+    HostName 148.187.111.29
+
+Host slimfly20
+    HostName 148.187.111.30
+
+Host slimfly21
+    HostName 148.187.111.31
+
+Host slimfly22
+    HostName 148.187.111.32
+
+Host slimfly23
+    HostName 148.187.111.33
+
+Host slimfly24
+    HostName 148.187.111.34

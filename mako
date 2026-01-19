@@ -3,7 +3,7 @@
 sort=-time
 
 #position
-anchor=center-left
+anchor=top-right
 
 #make them always visible, also in fullscreen
 layer=overlay

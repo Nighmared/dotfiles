@@ -101,5 +101,14 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "python.defaultInterpreterPath": "/bin/python"
+  "python.defaultInterpreterPath": "/bin/python",
+  "workbench.editor.enablePreview": false,
+  "yaml.schemas": {
+    "file:///home/nighmared/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
+  },
+  "dart.flutterSdkPath": "/home/nighmared/.local/share/flutter",
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.productIconTheme": "bongocat"
 }

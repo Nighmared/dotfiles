@@ -35,6 +35,7 @@ nano = "~/.config/nano/nanorc"
 
 [ssh.files]
 ssh = "~/.ssh/config"
+ssh_thesis = "~/.ssh/thesis_cscs"
 
 [ssh.variables]
 raava_remote_key = "a"

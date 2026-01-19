@@ -16,7 +16,7 @@ output "eDP-1" {
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "1920x1080@120.030"
+//    mode "1920x1080@120.030"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
     scale 1
@@ -34,7 +34,17 @@ output "eDP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=0
+    position x=1200 y=1080
+}
+output "Dell Inc. DELL U2419H 36Q7Y83" {
+    position x=2160 y=0
+}
+output "Dell Inc. DELL U2419H FGX0X83" {
+    position x=240 y=0
+}
+output "Loewe Opta GmbH LOEWE HDMI TV 0x01010101" {
+
+    mode "1920x1080@60.000"
 }
 
 
@@ -149,7 +159,7 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
-spawn-at-startup "dms" "run"
+//spawn-at-startup "dms" "run"  //disabled 8.1.2026, because also enabled as service
 spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
 environment {
   ELECTRON_OZONE_PLATFORM_HINT "auto"
@@ -226,7 +236,7 @@ window-rule {
     match app-id=r#"^gnome-calculator$"#
     match app-id=r#"^galculator$"#
     match app-id=r#"^blueman-manager$"#
-    match app-id=r#"^org\.gnome\.Nautilus$"#
+//    match app-id=r#"^org\.gnome\.Nautilus$"#
     match app-id=r#"^steam$"#
     match app-id=r#"^xdg-desktop-portal$"#
     open-floating true
@@ -291,7 +301,7 @@ binds {
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
 
     // === Security ===
-    Mod+L allow-when-locked=true hotkey-overlay-title="Lock Screen" {
+    Mod+Shift+L allow-when-locked=true hotkey-overlay-title="Lock Screen" {
         spawn "dms" "ipc" "call" "lock" "lock";
     }
     Mod+Shift+E { quit; }
@@ -347,7 +357,7 @@ binds {
     Mod+Shift+H     { move-column-left; }
     Mod+Shift+J     { move-window-down; }
     Mod+Shift+K     { move-window-up; }
-    Mod+Shift+L     { move-column-right; }
+//    Mod+Shift+L     { move-column-right; }
 
     // === Column Navigation ===
     Mod+Home { focus-column-first; }
@@ -462,3 +472,6 @@ binds {
 debug {
     honor-xdg-activation-with-invalid-serial
 }
+include "dms/binds.kdl"
+
+include "dms/outputs.kdl"
