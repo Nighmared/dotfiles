@@ -4,64 +4,68 @@
 [default.files]
 
 [alacritty.files]
-alacritty = "~/.config/alacritty/alacritty.toml"
+"alacritty.toml" = "~/.config/alacritty/alacritty.toml"
 
 [atuin.files]
-atuin = "~/.config/atuin/config.toml"
+"atuin.toml" = "~/.config/atuin/config.toml"
 
 [code.files]
-code-keybindings = "~/.config/Code/User/keybindings.json"
-code-settings = "~/.config/Code/User/settings.json"
+"code-keybindings.json" = "~/.config/Code/User/keybindings.json"
+"code-settings.json" = "~/.config/Code/User/settings.json"
+
+[dms.files]
+"dsearch.toml" = "~/.config/danksearch/config.toml"
+"dms.json" ="~/.config/DankMaterialShell/settings.json"
 
 [fish.files]
-fish = "~/.config/fish/config.fish"
-fish-atuin = "~/.config/fish/conf.d/atuin.env.fish"
-fish-grepir = "~/.config/fish/conf.d/grepir.fish"
-fish-kubectl = "~/.config/fish/conf.d/kubectl.fish"
-fish-z = "~/.config/fish/conf.d/z.fish"
-fish_variables = "~/.config/fish/fish_variables"
-fish_plugins = "~/.config/fish/fish_plugins"
+"fish.fish" = "~/.config/fish/config.fish"
+"fish-atuin.fish" = "~/.config/fish/conf.d/atuin.env.fish"
+"fish-grepir.fish" = "~/.config/fish/conf.d/grepir.fish"
+"fish-kubectl.fish" = "~/.config/fish/conf.d/kubectl.fish"
+"fish-z.fish" = "~/.config/fish/conf.d/z.fish"
+"fish_variables.fish" = "~/.config/fish/fish_variables"
+"fish_plugins.txt" = "~/.config/fish/fish_plugins"
 
 [git.files]
-git = "~/.config/git/config"
-git-eth = "~/Documents/ETH/gitconfig"
-git-vis = "~/Documents/vis/gitconfig"
+"git.gitconfig" = "~/.config/git/config"
+"git-eth.gitconfig" = "~/Documents/ETH/gitconfig"
+"git-vis.gitconfig" = "~/Documents/vis/gitconfig"
 
 [htop.files]
-htop = "~/.config/htop/htoprc"
+"htop.htoprc" = "~/.config/htop/htoprc"
 
 [nano.files]
-nano = "~/.config/nano/nanorc"
+"nano.nanorc" = "~/.config/nano/nanorc"
 
 [ssh.files]
-ssh = "~/.ssh/config"
-ssh_thesis = "~/.ssh/thesis_cscs"
+"ssh.ssh-config" = "~/.ssh/config"
+"ssh_thesis.ssh-config" = "~/.ssh/thesis_cscs"
 
 [ssh.variables]
 raava_remote_key = "a"
 
 
 [vlc.files]
-vlcrc = "~/.config/vlc/vlcrc"
+"vlcrc.conf" = "~/.config/vlc/vlcrc"
 
 [niri.files]
-niri = "~/.config/niri/config.kdl"
+"niri.kdl" = "~/.config/niri/config.kdl"
 
 [mako.files]
-mako = "~/.config/mako/config"
+"mako.toml" = "~/.config/mako/config"
 
 [waybar.files]
-waybar = "~/.config/waybar/config.jsonc"
-waybar-style = "~/.config/waybar/style.css"
+"waybar.jsonc" = "~/.config/waybar/config.jsonc"
+"waybar-style.css" = "~/.config/waybar/style.css"
 
 [swaylock.files]
-swaylock = "~/.config/swaylock/config"
+"swaylock.conf" = "~/.config/swaylock/config"
 
 [swaybg.files]
-swaybg = "~/.config/systemd/user/swaybg.service"
+"swaybg.service" = "~/.config/systemd/user/swaybg.service"
 
 [helix.files]
-helix = "~/.config/helix/config.toml"
+"helix.toml" = "~/.config/helix/config.toml"
 
 [settings]
 default_target_type = "automatic"

@@ -3,6 +3,7 @@ packages = [
     "alacritty",
     "atuin",
     "code",
+    "dms",
     "fish",
     "git",
     "htop",

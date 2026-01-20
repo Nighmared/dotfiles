@@ -304,6 +304,11 @@ binds {
     Mod+Shift+L allow-when-locked=true hotkey-overlay-title="Lock Screen" {
         spawn "dms" "ipc" "call" "lock" "lock";
     }
+    // == Emergency for quickshell dieing when locked :))
+    // alternatively go to tty2 and run `dms kill` if this doesn't work
+    Mod+Shift+End allow-when-locked=true hotkey-overlay-title="Rescue for lockscreen"{
+        spawn "dms" "restart";
+    }
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" {
         spawn "dms" "ipc" "call" "processlist" "toggle";
