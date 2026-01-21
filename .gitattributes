@@ -1,0 +1,8 @@
+*.ssh-config linguist-language=sshconfig linguist-detectable
+*.toml linguist-detectable
+*.json linguist-detectable
+*.jsonc linguist-detectable
+*.nanorc linguist-detectable
+*.kdl linguist-detectable
+*.service linguist-detectable
+*.gitconfig linguist-detectable
