@@ -42,9 +42,17 @@ output "Dell Inc. DELL U2419H 36Q7Y83" {
 output "Dell Inc. DELL U2419H FGX0X83" {
     position x=240 y=0
 }
+
+output "Philips Consumer Electronics Company PHL 40B1U5600 AU02431004359" {
+    mode "3440x1440@120.000"
+    scale 1
+    position x=80 y=-360
+}
+
+
 output "Loewe Opta GmbH LOEWE HDMI TV 0x01010101" {
 
-    mode "1920x1080@60.000"
+//    mode "1920x1080@60.000"
 }
 
 
@@ -226,6 +234,15 @@ window-rule {
     clip-to-geometry true
 }
 window-rule {
+    //floating terminal popups
+    match app-id="floating-popup"
+    open-floating true
+    default-window-height { fixed 600; }
+    default-column-width { fixed 900; }
+}
+
+
+window-rule {
     match app-id=r#"^gnome-control-center$"#
     match app-id=r#"^pavucontrol$"#
     match app-id=r#"^nm-connection-editor$"#
@@ -292,6 +309,12 @@ binds {
     }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+
+
+    //floating popups
+    Mod+P hotkey-overlay-title="dnf install" { spawn "alacritty" "--class" "floating-popup" "-e" "bash" "-c" "dnf list --available | cut -d \" \" -f1 | fzf --multi --preview \"dnf info {1}\" |rev| cut -d \".\" -f2- | rev | xargs -ro sudo dnf install  "; }
+
+    Mod+G hotkey-overlay-title="popup for vscode workspaces" { spawn "alacritty" "--class" "floating-popup" "-e" "fish" "-c" "fish ~/Documents/projects/popup-helpers/vscode_recent.fish";  } 
 
 
     // Media Control

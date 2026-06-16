@@ -10,6 +10,8 @@
   "dockTransparency": 1,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
+  "controlCenterTileColorMode": "primary",
+  "buttonColorMode": "primary",
   "cornerRadius": 12,
   "niriLayoutGapsOverride": -1,
   "niriLayoutRadiusOverride": -1,
@@ -21,11 +23,25 @@
   "mangoLayoutRadiusOverride": -1,
   "mangoLayoutBorderSize": -1,
   "use24HourClock": true,
-  "showSeconds": false,
+  "showSeconds": true,
+  "padHours12Hour": false,
   "useFahrenheit": false,
+  "windSpeedUnit": "kmh",
   "nightModeEnabled": false,
   "animationSpeed": 4,
   "customAnimationDuration": 83,
+  "syncComponentAnimationSpeeds": true,
+  "popoutAnimationSpeed": 1,
+  "popoutCustomAnimationDuration": 150,
+  "modalAnimationSpeed": 1,
+  "modalCustomAnimationDuration": 150,
+  "enableRippleEffects": true,
+  "blurEnabled": false,
+  "blurForegroundLayers": true,
+  "blurLayerOutlineOpacity": 0.12,
+  "blurBorderColor": "outline",
+  "blurBorderCustomColor": "#ffffff",
+  "blurBorderOpacity": 0.35,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": false,
@@ -42,6 +58,9 @@
   "selectedGpuIndex": 0,
   "enabledGpuPciIds": [],
   "showSystemTray": true,
+  "systemTrayIconTintMode": "none",
+  "systemTrayIconTintSaturation": 50,
+  "systemTrayIconTintStrength": 135,
   "showClock": true,
   "showNotificationButton": true,
   "showBattery": true,
@@ -72,7 +91,8 @@
     {
       "id": "brightnessSlider",
       "enabled": true,
-      "width": 50
+      "width": 50,
+      "deviceName": "backlight:intel_backlight"
     },
     {
       "id": "wifi",
@@ -125,13 +145,16 @@
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
   "showWorkspaceApps": false,
+  "workspaceDragReorder": true,
   "maxWorkspaceIcons": 3,
+  "workspaceAppIconSizeOffset": 0,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
   "showOccupiedWorkspacesOnly": false,
   "reverseScrolling": false,
   "dwlShowAllTags": false,
   "workspaceColorMode": "default",
+  "workspaceOccupiedColorMode": "none",
   "workspaceUnfocusedColorMode": "default",
   "workspaceUrgentColorMode": "default",
   "workspaceFocusedBorderEnabled": false,
@@ -142,12 +165,23 @@
   "scrollTitleEnabled": true,
   "audioVisualizerEnabled": true,
   "audioScrollMode": "volume",
+  "audioWheelScrollAmount": 5,
   "clockCompactMode": false,
   "focusedWindowCompactMode": false,
   "runningAppsCompactMode": true,
+  "barMaxVisibleApps": 0,
+  "barMaxVisibleRunningApps": 0,
+  "barShowOverflowBadge": true,
+  "appsDockHideIndicators": false,
+  "appsDockColorizeActive": false,
+  "appsDockActiveColorMode": "primary",
+  "appsDockEnlargeOnHover": false,
+  "appsDockEnlargePercentage": 125,
+  "appsDockIconSizePercentage": 100,
   "keyboardLayoutNameCompactMode": false,
   "runningAppsCurrentWorkspace": false,
   "runningAppsGroupByApp": false,
+  "runningAppsCurrentMonitor": false,
   "appIdSubstitutions": [
     {
       "pattern": "Spotify",
@@ -175,20 +209,38 @@
       "type": "regex"
     }
   ],
-  "centeringMode": "index",
+  "centeringMode": "geometric",
   "clockDateFormat": "",
   "lockDateFormat": "",
+  "greeterRememberLastSession": true,
+  "greeterRememberLastUser": true,
+  "greeterEnableFprint": false,
+  "greeterEnableU2f": false,
+  "greeterWallpaperPath": "",
   "mediaSize": 1,
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
+  "browserPickerViewMode": "grid",
+  "browserUsageHistory": {},
+  "appPickerViewMode": "grid",
+  "filePickerUsageHistory": {},
   "sortAppsAlphabetically": false,
-  "appLauncherGridColumns": 4,
+  "appLauncherGridColumns": 3,
   "spotlightCloseNiriOverview": true,
+  "spotlightSectionViewModes": {
+    "apps": "list"
+  },
+  "appDrawerSectionViewModes": {},
   "niriOverviewOverlayEnabled": true,
+  "dankLauncherV2Size": "compact",
+  "dankLauncherV2BorderEnabled": false,
+  "dankLauncherV2BorderThickness": 2,
+  "dankLauncherV2BorderColor": "primary",
+  "dankLauncherV2ShowFooter": true,
+  "dankLauncherV2UnloadOnClose": false,
   "useAutoLocation": false,
   "weatherEnabled": true,
-  "networkPreference": "ethernet",
-  "vpnLastConnected": "3f168219-fce8-4fbf-99a8-18ebc2095fa4",
+  "networkPreference": "wifi",
   "iconTheme": "System Default",
   "cursorSettings": {
     "theme": "System Default",
@@ -248,15 +300,26 @@
   "launchPrefix": "",
   "brightnessDevicePins": {},
   "wifiNetworkPins": {
-    "preferredWifi": "Hufflepuff Gemeinschaftsraum"
+    "preferredWifi": [
+      "Hufflepuff Gemeinschaftsraum"
+    ]
   },
-  "bluetoothDevicePins": {},
+  "bluetoothDevicePins": {
+    "preferredDevice": [
+      "F8:4E:17:55:65:8B",
+      "00:09:A7:4A:2F:44"
+    ]
+  },
   "audioInputDevicePins": {},
   "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
   "terminalsAlwaysDark": false,
+  "muxType": "tmux",
+  "muxUseCustomCommand": false,
+  "muxCustomCommand": "",
+  "muxSessionFilter": "",
   "runDmsMatugenTemplates": true,
   "matugenTemplateGtk": true,
   "matugenTemplateNiri": true,
@@ -278,8 +341,11 @@
   "matugenTemplateDgop": true,
   "matugenTemplateKcolorscheme": true,
   "matugenTemplateVscode": true,
+  "matugenTemplateEmacs": true,
+  "matugenTemplateZed": true,
   "showDock": false,
   "dockAutoHide": false,
+  "dockSmartAutoHide": false,
   "dockGroupByApp": false,
   "dockOpenOnOverview": false,
   "dockPosition": 1,
@@ -293,7 +359,19 @@
   "dockBorderOpacity": 1,
   "dockBorderThickness": 1,
   "dockIsolateDisplays": false,
+  "dockLauncherEnabled": false,
+  "dockLauncherLogoMode": "apps",
+  "dockLauncherLogoCustomPath": "",
+  "dockLauncherLogoColorOverride": "",
+  "dockLauncherLogoSizeOffset": 0,
+  "dockLauncherLogoBrightness": 0.5,
+  "dockLauncherLogoContrast": 1,
+  "dockMaxVisibleApps": 0,
+  "dockMaxVisibleRunningApps": 0,
+  "dockShowOverflowBadge": true,
   "notificationOverlayEnabled": true,
+  "notificationPopupShadowEnabled": true,
+  "notificationPopupPrivacyMode": false,
   "modalDarkenBackground": true,
   "lockScreenShowPowerActions": true,
   "lockScreenShowSystemIcons": true,
@@ -301,8 +379,13 @@
   "lockScreenShowDate": true,
   "lockScreenShowProfileImage": true,
   "lockScreenShowPasswordField": true,
+  "lockScreenShowMediaPlayer": true,
+  "lockScreenPowerOffMonitorsOnLock": false,
+  "lockAtStartup": false,
   "enableFprint": false,
   "maxFprintTries": 3,
+  "enableU2f": false,
+  "u2fMode": "or",
   "lockScreenActiveMonitor": "all",
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 2,
@@ -312,16 +395,20 @@
   "notificationTimeoutCritical": 0,
   "notificationCompactMode": false,
   "notificationPopupPosition": 0,
+  "notificationAnimationSpeed": 1,
+  "notificationCustomAnimationDuration": 400,
   "notificationHistoryEnabled": true,
   "notificationHistoryMaxCount": 50,
   "notificationHistoryMaxAgeDays": 7,
-  "notificationHistorySaveLow": true,
+  "notificationHistorySaveLow": false,
   "notificationHistorySaveNormal": true,
   "notificationHistorySaveCritical": true,
+  "notificationRules": [],
   "osdAlwaysShowValue": false,
   "osdPosition": 5,
   "osdVolumeEnabled": true,
   "osdMediaVolumeEnabled": true,
+  "osdMediaPlaybackEnabled": true,
   "osdBrightnessEnabled": true,
   "osdIdleInhibitorEnabled": true,
   "osdMicMuteEnabled": true,
@@ -353,8 +440,65 @@
   "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
-  "niriOutputSettings": {},
+  "niriOutputSettings": {
+    "AU Optronics 0xD291 Unknown": {
+      "disabled": false
+    },
+    "PNP(BNQ) BenQ BL2405 23J00927SL0": {
+      "disabled": false
+    },
+    "PNP(BNQ) BenQ BL2411 M4E02507019": {
+      "disabled": false,
+      "focusAtStartup": true
+    },
+    "eDP-1": {
+      "focusAtStartup": false,
+      "disabled": true
+    }
+  },
   "hyprlandOutputSettings": {},
+  "displayProfiles": {
+    "niri": {
+      "profile_1775652656805_yeldec": {
+        "id": "profile_1775652656805_yeldec",
+        "name": "outdoor",
+        "outputSet": [
+          "AU Optronics 0xD291 Unknown",
+          "PNP(BNQ) BenQ BL2405 23J00927SL0",
+          "PNP(BNQ) BenQ BL2411 M4E02507019"
+        ],
+        "createdAt": 1775652656805,
+        "updatedAt": 1775652656805
+      },
+      "profile_1778591008260_ulp2ob": {
+        "id": "profile_1778591008260_ulp2ob",
+        "name": "vseth",
+        "outputSet": [
+          "DP-10",
+          "DP-8",
+          "eDP-1"
+        ],
+        "createdAt": 1778591008260,
+        "updatedAt": 1778591008260
+      },
+      "profile_1780517853343_m62iae": {
+        "id": "profile_1780517853343_m62iae",
+        "name": "b",
+        "outputSet": [
+          "HDMI-A-1",
+          "eDP-1"
+        ],
+        "createdAt": 1780517853343,
+        "updatedAt": 1780517853343
+      }
+    }
+  },
+  "activeDisplayProfile": {
+    "niri": "profile_1780517853343_m62iae"
+  },
+  "displayProfileAutoSelect": false,
+  "displayShowDisconnected": false,
+  "displaySnapToEdge": true,
   "barConfigs": [
     {
       "id": "default",
@@ -379,14 +523,13 @@
         {
           "id": "systemUpdate",
           "enabled": true
+        },
+        {
+          "id": "music",
+          "enabled": true
         }
       ],
       "centerWidgets": [
-        {
-          "id": "music",
-          "enabled": true,
-          "mediaSize": 1
-        },
         {
           "id": "clock",
           "enabled": true,
@@ -409,6 +552,10 @@
         },
         {
           "id": "memUsage",
+          "enabled": true
+        },
+        {
+          "id": "network_speed_monitor",
           "enabled": true
         },
         {
@@ -533,6 +680,10 @@
     },
     "DP-5": {
       "enabled": true
+    },
+    "0xD291": {
+      "enabled": false,
+      "size": 160
     }
   },
   "desktopWidgetInstances": [
@@ -553,16 +704,56 @@
           "all"
         ],
         "showOnOverlay": false,
-        "showOnOverview": true,
+        "showOnOverview": false,
         "showOnOverviewOnly": false,
         "syncPositionAcrossScreens": true
       },
       "positions": {
         "_synced": {
-          "x": 0.4270833333333333,
-          "y": 0.37037037037037035,
+          "x": 0.4166666666666667,
+          "y": 0.4,
+          "width": 320,
+          "height": 320
+        }
+      }
+    },
+    {
+      "id": "dw_1769523186345_g4sen2y8h",
+      "widgetType": "appShortcut",
+      "name": "ThesisCode Shortcut",
+      "enabled": true,
+      "config": {
+        "displayPreferences": [
+          "all"
+        ],
+        "shortcutApp": "ThesisCode",
+        "followTheme": false,
+        "drawOutlines": false,
+        "drawBorder": false,
+        "showOnOverview": true,
+        "syncPositionAcrossScreens": true,
+        "showOnOverlay": false,
+        "showOnOverviewOnly": true,
+        "backgroundOpacity": 100
+      },
+      "positions": {
+        "DP-5": {
+          "width": 120,
+          "height": 120,
+          "x": 1040,
+          "y": 200
+        },
+        "DP-7": {
           "width": 200,
-          "height": 200
+          "height": 200,
+          "x": 860,
+          "y": 440
+        },
+        "_synced": {
+          "x": 0.475146484375,
+          "y": 0.8333951822916666,
+          "width": 113.6640625,
+          "height": 113.6640625
         }
       }
     }
@@ -573,5 +764,8 @@
       "trigger": "?"
     }
   },
+  "clipboardEnterToPaste": false,
+  "launcherPluginVisibility": {},
+  "launcherPluginOrder": [],
   "configVersion": 5
 }

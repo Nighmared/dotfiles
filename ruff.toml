@@ -1,0 +1,53 @@
+
+line-length = 88
+indent-width = 4
+fix = true
+
+
+[lint]
+extend-safe-fixes = ["TC", "PTH", "RET504"]
+select = [
+  #flake8-annotations
+  "ANN",
+  #flake8-bugbear
+  "B",
+  #flake8-bandit
+  "S",
+  # pycodestyle
+  "E",
+  "N",
+  "W",
+  # Pyflakes
+  "F",
+  # isort
+  "I",
+  # pyupgrade
+  "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # flake8-return
+  "RET",
+  # flake8-self
+  "SLF",
+  # flake8-raise
+  "RSE",
+  #TODOs
+  "TD",
+  "PTH",
+  "TID",  #import good practices
+  "ICN",  # import conventions
+  "C4",   # incorrect comprehensions
+  "UP",   #warn about changes in newer python versions [pyupgrade]
+  "FA",   # from __future__ import annotations (?)
+  "ISC",  # good string concat
+  "TC",   # move applicable imports to TYPE_CHECKING bloc
+  "PERF", # perflint rules
+  "DOC",  # pydoclint
+  # "D" , # pydocstyle -> warns about missing docstrings
+  "PL",  # pylint
+  "RUF", # ruff specific rules
+]
+
+ignore = ["TD003", "TD002", "S603"]

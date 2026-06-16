@@ -39,6 +39,7 @@ Match all
 ###############3ISL
 Host jumphost.inf.ethz.ch
 	User konrathj
+	IdentityFile {{ jumphost_identity }}
 
 Host isl-desktop3.inf.ethz.ch
 	Port 2142

@@ -15,7 +15,7 @@
 
 [dms.files]
 "dsearch.toml" = "~/.config/danksearch/config.toml"
-"dms.json" ="~/.config/DankMaterialShell/settings.json"
+"dms.json" = "~/.config/DankMaterialShell/settings.json"
 
 [fish.files]
 "fish.fish" = "~/.config/fish/config.fish"
@@ -66,6 +66,10 @@ raava_remote_key = "a"
 
 [helix.files]
 "helix.toml" = "~/.config/helix/config.toml"
+
+[ruff.files]
+"ruff.toml" = "~/.config/ruff/ruff.toml"
+
 
 [settings]
 default_target_type = "automatic"

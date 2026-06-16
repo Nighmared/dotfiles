@@ -10,7 +10,7 @@
   },
   "editor.stickyScroll.enabled": true,
 
-  "sort-imports.languages": ["javascript", "typescript"],
+  "sort-imports.languages": ["javascript", "typescript", "python"],
 
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -20,23 +20,33 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "flake8.args": ["--max-line-length=120"],
-  "pylint.args": ["--max-line-length=120"],
 
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
   "[python]": {
     "editor.wordBasedSuggestions": "matchingDocuments",
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "never"
+      "source.organizeImports": "always",
+      "source.fixAll.ruff": "always"
     },
     "editor.formatOnType": true
   },
+  "basedpyright.analysis.typeCheckingMode": "strict",
+  "basedpyright.analysis.useLibraryCodeForTypes": true,
+  "basedpyright.analysis.inlayHints.variableTypes": true,
+  "basedpyright.analysis.inlayHints.genericTypes": true,
+  "basedpyright.analysis.inlayHints.callArgumentNames": true,
+  "basedpyright.analysis.diagnosticMode": "workspace",
 
-  "python.analysis.autoImportCompletions": true,
-  "python.analysis.indexing": true,
-  "python.analysis.typeCheckingMode": "basic",
+  // "python.languageServer": "Default",
+  "ruff.configuration": "~/.config/ruff/pyproject.toml",
+  "ruff.fixAll": true,
+  "ruff.nativeServer": "auto",
+  "ty.inlayHints.variableTypes": false,
+  "ty.diagnosticMode": "workspace",
+  "ty.completions.autoImport": true,
+  "ty.disableLanguageServices": true,
 
   "[java]": {
     "editor.formatOnSave": true
@@ -110,5 +120,28 @@
   "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
   "go.toolsManagement.autoUpdate": true,
-  "workbench.productIconTheme": "bongocat"
+  "workbench.productIconTheme": "bongocat",
+  "workbench.startupEditor": "none",
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "python": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
+  "github.copilot.nextEditSuggestions.fixes": false,
+  "files.associations": {
+    "*.yaml": "yaml"
+  },
+  "extensions.ignoreRecommendations": true,
+  "git.openRepositoryInParentFolders": "never",
+  "chat.viewSessions.orientation": "stacked",
+  "python.useEnvironmentsExtension": true,
+  "latex-workshop.formatting.latex": "tex-fmt",
+  "workbench.editor.empty.hint": "hidden"
 }

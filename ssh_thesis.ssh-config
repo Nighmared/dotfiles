@@ -6,6 +6,7 @@ Host ela.cscs.ch
 Host slimfly*
   User jkonrath
   IdentityFile /home/nighmared/.ssh/thesis_ed25519
+#  ProxyJump jumphost.inf.ethz.ch
 
 Host slimfly
     HostName slimfly.cscs.ch

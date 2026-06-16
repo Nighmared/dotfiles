@@ -16,6 +16,7 @@ packages = [
     "swaylock",
     "swaybg",
     "helix",
+    "ruff",
 ]
 
 # [files]
