@@ -1,4 +1,7 @@
-includes = [".dotter/includes/yangchen-vars.toml"]
+includes = [
+    ".dotter/includes/yangchen-vars.toml",
+    ".dotter/includes/linux.toml",
+]
 packages = [
     "alacritty",
     "atuin",

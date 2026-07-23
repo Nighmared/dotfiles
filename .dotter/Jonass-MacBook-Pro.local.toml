@@ -1,0 +1,14 @@
+includes = [".dotter/includes/dj-mac.toml"]
+packages = [
+    "alacritty",
+    "atuin",
+    "code",
+    "git",
+    "nano",
+    "vlc",
+    # "helix",
+    "ruff",
+    "zsh",
+    "starship",
+    "brew",
+]

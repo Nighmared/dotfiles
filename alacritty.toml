@@ -29,9 +29,9 @@ TERM = "xterm-256color"
 [font]
 size = 11
 
-  [font.normal]
-  family = "Monospace"
-  style = "Regular"
+[font.normal]
+family = "Monospace"
+style = "Regular"
 
 [[keyboard.bindings]]
 action = "ResetFontSize"
@@ -49,10 +49,10 @@ key = "Minus"
 mods = "Control"
 
 [terminal.shell]
-args = [ "--login" ]
+args = ["--login"]
 program = "/usr/bin/fish"
 
 [general]
 import = [
-  "/home/nighmared/.npm/_npx/808b709e6234a442/node_modules/alacritty-themes/themes/3024.dark.toml"
+  "/home/nighmared/.npm/_npx/808b709e6234a442/node_modules/alacritty-themes/themes/3024.dark.toml",
 ]

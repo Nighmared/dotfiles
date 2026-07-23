@@ -1,0 +1,48 @@
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+
+[lint]
+select = ["ALL"]
+ignore = ["D"]
+extend-safe-fixes = [
+    "TC003",
+    "TC001",
+    "RUF005",
+    "RET",
+    "ANN201",
+    "SIM201",
+    "EM101",
+    "PT018",
+    "C416",
+]
+
+[format]
+indent-style = "space"
+docstring-code-format = true

@@ -13,4 +13,4 @@ set minibar
 set numbercolor blue,black #color of line numbers
 set titlecolor blue,black #color of titlebar
 set keycolor brightred #color of shortcut keys
-include "/usr/share/nano/*.nanorc"
+include {{ includes_path }}

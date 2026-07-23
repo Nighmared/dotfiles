@@ -3,9 +3,6 @@
 
 [default.files]
 
-[alacritty.files]
-"alacritty.toml" = "~/.config/alacritty/alacritty.toml"
-
 [atuin.files]
 "atuin.toml" = "~/.config/atuin/config.toml"
 
@@ -36,7 +33,8 @@
 
 [nano.files]
 "nano.nanorc" = "~/.config/nano/nanorc"
-
+[nano.variables]
+includes_path = "/usr/share/nano/*.nanorc"
 [ssh.files]
 "ssh.ssh-config" = "~/.ssh/config"
 "ssh_thesis.ssh-config" = "~/.ssh/thesis_cscs"
@@ -66,9 +64,6 @@ raava_remote_key = "a"
 
 [helix.files]
 "helix.toml" = "~/.config/helix/config.toml"
-
-[ruff.files]
-"ruff.toml" = "~/.config/ruff/ruff.toml"
 
 
 [settings]

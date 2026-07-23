@@ -1,0 +1,4 @@
+[alacritty.files]
+"alacritty.toml" = "~/.config/alacritty/alacritty.toml"
+[ruff.files]
+"ruff.toml" = "~/.config/ruff/ruff.toml"

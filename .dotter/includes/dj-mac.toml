@@ -1,0 +1,18 @@
+[nano.variables]
+includes_path = "/opt/homebrew/share/nano/*.nanorc"
+
+[ruff.files]
+"dj/ruff.work.toml" = "~/.config/ruff/ruff.toml"
+
+[alacritty.files]
+"dj/alacritty.work.toml" = "~/.config/alacritty/alacritty.toml"
+
+[zsh.files]
+"dj/zsh" = { target = "~/.config/zsh", type = "symbolic", recurse = false }
+"dj/zshenv" = "~/.zshenv"
+
+[starship.files]
+"dj/starship.toml" = "~/.config/starship.toml"
+
+[brew.files]
+"dj/Brewfile" = "~/.config/homebrew/Brewfile"

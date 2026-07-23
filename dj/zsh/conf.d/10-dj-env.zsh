@@ -1,0 +1,1 @@
+export DJ2_DIR="$HOME/repos/dj2"
