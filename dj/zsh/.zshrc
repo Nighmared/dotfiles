@@ -1,3 +1,4 @@
+# zmodload zsh/zprof
 DEBUG=0
 
 # anything generic shell scripting
@@ -11,3 +12,4 @@ for file in $ZDOTDIR/completions.d/*.zsh; do
 	# echo "$file"
 	source "$file"
 done
+# zprof

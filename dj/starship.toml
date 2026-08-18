@@ -12,6 +12,10 @@ $python\
 $character\
 """
 
+right_format = """
+${custom.djctl}\
+"""
+
 [directory]
 style = "blue"
 
@@ -51,10 +55,16 @@ detect_files = []
 
 [kubernetes]
 format = '[$symbol$context \($namespace\)]($style) '
-style = "dimmed green"
+style = "bold underline red"
 symbol = "⛵"
 disabled = false
 contexts = [
     { context_pattern = "docker-desktop", user_pattern = ".*", style = "green" },
     { context_pattern = "office", style = "bold cyan" },
 ]
+
+[custom.djctl]
+command = "jq -r '.current_context' ${DJCTL_HOME:-~/.dj}/state.json"
+style = "purple"
+symbol = "🛰️ "
+when = "true"

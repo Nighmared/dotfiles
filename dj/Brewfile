@@ -76,8 +76,6 @@ brew "microsoft/mssql-release/msodbcsql18", trusted: true
 brew "microsoft/mssql-release/mssql-tools18", trusted: true
 # Desktop password and login vault
 cask "bitwarden"
-# OpenAI's official ChatGPT desktop app
-cask "chatgpt"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 # Web browser
@@ -129,8 +127,6 @@ brew "krew"
 brew "fzf"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
 
 uv "pyflakes"
 uv "ruff"# Free (GNU) replacement for the Pico text editor
@@ -143,3 +139,22 @@ cask "super-productivity"
 brew "starship"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Music streaming service
+cask "spotify"
+
+# very much local only tool
+uv "bumpbot"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Keyboard customiser
+cask "karabiner-elements"
+# Kubernetes command-line interface
+brew "kubectl"
+# Tool to reverse the direction of scrolling
+cask "scroll-reverser"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
