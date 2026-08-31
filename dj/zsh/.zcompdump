@@ -593,6 +593,7 @@ _comps=(
 'ginstall' '_install'
 'git' '_git'
 'git-buildpackage' '_git-buildpackage'
+'git-lfs' '_git-lfs'
 'gitk' '_git'
 'gjoin' '_join'
 'glance' '_openstack'
@@ -1564,7 +1565,6 @@ _comps=(
 'urxvt256c-mlc' '_urxvt'
 'urxvt256cc' '_urxvt'
 'urxvtc' '_urxvt'
-'usage' '_usage'
 'usbconfig' '_usbconfig'
 'uscan' '_uscan'
 'useradd' '_user_admin'
@@ -1859,9 +1859,9 @@ bindkey '^[~' _bash_complete-word
 
 autoload -Uz _act _atuin _az _bazel _brew \
             _codex _container _docker _docker-compose _dotter \
-            _dyff _gh _git _helm _kubectl \
-            _mise _p11-kit _rg _starship _tilt \
-            _trust _ty _usage _uv _uvx \
+            _dyff _gh _git _git-lfs _helm \
+            _kubectl _mise _p11-kit _rg _starship \
+            _tilt _trust _ty _uv _uvx \
             __arguments _a2ps _a2utils _aap _abcde \
             _absolute_command_paths _ack _acpi _acpitool _acroread \
             _adb _add-zle-hook-widget _add-zsh-hook _alias _aliases \

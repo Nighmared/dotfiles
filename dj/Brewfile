@@ -158,3 +158,8 @@ brew "kubectl"
 cask "scroll-reverser"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+vscode "ms-toolsai.jupyter"
+# Git extension for versioning large files
+brew "git-lfs"
