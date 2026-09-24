@@ -16,3 +16,4 @@ includes_path = "/opt/homebrew/share/nano/*.nanorc"
 
 [brew.files]
 "dj/Brewfile" = "~/.config/homebrew/Brewfile"
+"dj/common.Brewfile" = "~/.config/homebrew/common.Brewfile"

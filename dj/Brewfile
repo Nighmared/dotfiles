@@ -1,165 +1,54 @@
-tap "azure/kubelogin", "https://github.com/Azure/homebrew-kubelogin"
-tap "hashicorp/tap"
-tap "microsoft/mssql-release"
+# Load the brewfile with DJ-wide dependencies
+instance_eval(File.read(File.expand_path("~/.config/homebrew/common.Brewfile")))
+
+
+# Run your GitHub Actions locally
+brew "act"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
-# Microsoft Azure CLI 2.0
-brew "azure-cli"
-# User-friendly launcher for Bazel
-brew "bazelisk"
+# Improved shell history for zsh, bash, fish and nushell
+brew "atuin"
 # Statistics utility to count lines of code
 brew "cloc"
 # Dotfile manager and templater written in rust
 brew "dotter"
-# Distributed revision control system
-brew "git"
-# GNU implementation of the famous stream editor
-brew "gnu-sed"
-# GNU Privacy Guard (OpenPGP)
-brew "gnupg"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
-# Kubernetes package manager
-brew "helm@3", link: true
-# Extremely fast Python type checker, written in Rust
-brew "ty"
-# Create and run Linux containers using lightweight virtual machines
-brew "container"
-# Multimedia player
-cask "vlc"
-# Polyglot runtime manager (asdf rust clone)
-brew "mise"
-# GitHub command-line tool
-brew "gh"
-# Pretty, minimal and fast ZSH prompt
-brew "pure"
-# Improved shell history for zsh, bash, fish and nushell
-brew "atuin"
-
 # Diff tool for YAML files, and sometimes JSON
 brew "dyff"
-# Run your GitHub Actions locally
-brew "act"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
-# Lightweight and flexible command-line JSON processor
-brew "jq"
-# Domain specific configuration language for defining JSON data
-brew "jsonnet"
-# Package manager for Jsonnet
-brew "jsonnet-bundler"
 # FAST Kubernetes manifests validator, with support for Custom Resources!
 brew "kubeconform"
-# Manage multiple Node.js versions
-brew "nvm"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# Flexible, reusable and concise configuration for Kubernetes using Jsonnet
-brew "tanka"
-# Define your dev environment as code. For microservice apps on Kubernetes
-brew "tilt"
-# Extremely fast Python package installer and resolver, written in Rust
-brew "uv"
-# Executes a program periodically, showing output fullscreen
-brew "watch"
-# Zstandard is a real-time compression algorithm
-brew "zstd"
-# A Kubernetes credential (exec) plugin implementing azure authentication
-brew "azure/kubelogin/kubelogin", trusted: true
-# Terraform
-brew "hashicorp/tap/terraform", trusted: true
-# ODBC Driver for Microsoft(R) SQL Server(R)
-brew "microsoft/mssql-release/msodbcsql18", trusted: true
-# Sqlcmd and Bcp for Microsoft(R) SQL Server(R)
-brew "microsoft/mssql-release/mssql-tools18", trusted: true
-# Desktop password and login vault
-cask "bitwarden"
-# App to build and share containerised applications and microservices
-cask "docker-desktop"
-# Web browser
-cask "firefox"
-# App to manage software development and track bugs
-cask "linear"
-# Team communication and collaboration software
-cask "slack"
-# Unicode keyboard layout editor
-cask "ukelele"
-# Open-source code editor
-cask "visual-studio-code"
-vscode "astral-sh.ty"
-vscode "bazelbuild.vscode-bazel"
-vscode "bradlc.vscode-tailwindcss"
-vscode "charliermarsh.ruff"
-vscode "dbaeumer.vscode-eslint"
-vscode "detachhead.basedpyright"
-vscode "eamodio.gitlens"
-vscode "esbenp.prettier-vscode"
-vscode "github.vscode-github-actions"
-vscode "golang.go"
-vscode "grafana.vscode-jsonnet"
-vscode "hashicorp.terraform"
-vscode "lextudio.restructuredtext"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "openai.chatgpt"
-vscode "pixl-garden.bongocat"
-vscode "redhat.vscode-yaml"
-vscode "rust-lang.rust-analyzer"
-vscode "sreetamd.karma"
-vscode "tamasfe.even-better-toml"
-vscode "tilt-dev.tiltfile"
-vscode "usernamehw.errorlens"
-vscode "wakatime.vscode-wakatime"
-vscode "foxundermoon.shell-format"
-
-go "golang.org/x/tools/gopls"
-npm "corepack"
-# Package manager for kubectl plugins
-brew "krew"
-# Command-line fuzzy finder written in Go
-brew "fzf"
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "gcloud-cli"
-
-uv "pyflakes"
-uv "ruff"# Free (GNU) replacement for the Pico text editor
-brew "nano"
-# License free Wi-Fi, VPN, and Access Application for Organizations
-cask "unifi-identity-endpoint"
-# To-do list and time tracker
-cask "super-productivity"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+
+# Desktop password and login vault
+cask "bitwarden"
+# Web browser
+cask "firefox"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Music streaming service
-cask "spotify"
-
-# very much local only tool
-uv "bumpbot"
-# OpenAI's official ChatGPT desktop app
-cask "chatgpt"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
 # Keyboard customiser
 cask "karabiner-elements"
-# Kubernetes command-line interface
-brew "kubectl"
-# Tool to reverse the direction of scrolling
-cask "scroll-reverser"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
-vscode "ms-toolsai.jupyter"
-# Git extension for versioning large files
-brew "git-lfs"
+# Tool to reverse the direction of scrolling
+cask "scroll-reverser"
+# Music streaming service
+cask "spotify"
+# To-do list and time tracker
+cask "super-productivity"
+# Unicode keyboard layout editor
+cask "ukelele"
+
+# very much local only tool, to prevent it from removing it
+uv "bumpbot"
+
+vscode "eamodio.gitlens"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "openai.chatgpt"
+vscode "pixl-garden.bongocat"
+vscode "sreetamd.karma"
+vscode "wakatime.vscode-wakatime"
+

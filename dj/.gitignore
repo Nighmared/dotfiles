@@ -2,3 +2,5 @@ zsh/.zsh_sessions
 zsh/.zcompcache
 zsh/.zsh_history
 zsh/setup.zsh
+**/*-secret.zsh
+codex.toml
